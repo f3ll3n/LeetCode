@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-const buildArray =(nums) => {
+var buildArray = function(nums) {
     return nums.map((num) => {
         return nums[num];
     })
