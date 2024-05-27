@@ -7,7 +7,9 @@
 var cancellable = function(fn, args, t) {
     fn(...args);
     let cancellableInterval = setInterval(() => fn(...args), t)
-    return cancelFn = () => clearInterval(cancellableInterval); 
+    return function cancelFn(){
+        clearInterval(cancellableInterval)
+    }
     
 };
 
