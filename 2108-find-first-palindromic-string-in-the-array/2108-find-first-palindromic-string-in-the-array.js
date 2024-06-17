@@ -4,10 +4,13 @@
  */
 var firstPalindrome = function(words) {
     let result = "";
-    words.forEach((word) => {
+    for(let word of words){
         if(word === word.split('').reverse().join('') && !result){
             result = word
         }
-    })
+    }
+//     words.forEach((word) => {
+        
+//     })
     return result
 };
