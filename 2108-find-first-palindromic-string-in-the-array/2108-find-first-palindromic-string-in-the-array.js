@@ -9,8 +9,5 @@ var firstPalindrome = function(words) {
             result = word
         }
     }
-//     words.forEach((word) => {
-        
-//     })
     return result
 };
